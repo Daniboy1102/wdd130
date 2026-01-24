@@ -1,11 +1,12 @@
 :root {
-  --primary-color: #055a05; /* forest green */
-  --secondary-color: #f4a261; /* warm sand */
-  --accent1-color: #264653; /* dark slate blue */
-  --accent2-color: #e9c46a; /* light golden yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+    --primary-color: #055a05;      /* forest green */
+    --secondary-color: #4fa3a5;    /* river blue */
+    --accent1-color: #2b2e34;      /* iron charcoal */
+    --accent2-color: #264653;      /* dark slate blue */
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
+
 
 * {
     margin: 0;
@@ -26,6 +27,7 @@ header, main, footer {
 /*Head and Navigation*/
 header {
     background-color: var(--primary-color);
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,7 +47,7 @@ nav li {
 }
 
 nav a {
-    color: var(--accent2-color);
+    color: white;
     text-decoration: none;
     padding: 8px;
 }
@@ -106,7 +108,6 @@ nav, p, section, article {
 section:last-of-type {
     text-align: center;
     padding: 20px 0;
-    background-color: var(--secondary-color);
 }
 
 section:last-of-type h2 {
