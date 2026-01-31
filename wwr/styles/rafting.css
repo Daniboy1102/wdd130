@@ -22,32 +22,40 @@ header, main, footer {
     margin: 0 auto;
 }
 
-/*Head and Navigation*/
+/* Header - CSS Grid Layout */
 header {
     background-color: var(--primary-color);
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
 }
 
 header img {
     height: 60px;
+    width: auto;
 }
 
-nav ul {
+/* Navigation - CSS Flexbox Layout */
+nav {
     display: flex;
-    list-style: none;
-}
-
-nav li {
-    margin: 0 8px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 8px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
 }
 
 /* Headings */
@@ -57,12 +65,12 @@ h1, h2 {
 }
 
 /* Content Spacing */
-nav, p, section, article {
+p, section, article {
     margin: 16px;
     padding: 8px;
 }
 
-/*Hero */
+/* Hero Section */
 .hero {
     position: relative;
 }
@@ -88,8 +96,8 @@ nav, p, section, article {
 /* Hero Article Overlay */
 .hero article {
     position: absolute;
-    top: 80px;        /* space below the h1 */
-    right: 20px;      /* pushes it to the right side */
+    top: 80px;
+    right: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     max-width: 350px;
     padding: 15px;
@@ -102,28 +110,95 @@ nav, p, section, article {
     margin-left: 10px;
 }
 
-/* Adventure! */
-section:last-of-type {
+/* History Section */
+.history {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.history h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.history p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Adventures Section */
+.adventures {
+    padding: 30px 0;
+}
+
+.adventures h2 {
     text-align: center;
-    padding: 20px 0;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
-section:last-of-type h2 {
-    font-size: 3rem;
+/*Horizontal Layout */
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
 }
 
+.adventure-grid figure {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.adventure-grid figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
 
 footer {
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Horizontal Right Alignment */
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .socialmedia a {
     text-decoration: none;
+    display: inline-block;
 }
 
 .socialmedia img {
     width: 30px;
-    margin: 0 5px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.1);
 }
