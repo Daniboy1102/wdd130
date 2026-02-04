@@ -1,0 +1,100 @@
+  /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    padding: 2rem 1rem;
+}
+
+/* Quiz Wrapper */
+.quiz-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+/* Header */
+.quiz-header h1 {
+    color: darkblue;
+    margin-bottom: 1.5rem;
+}
+
+/* Hide the badge and subtitle to keep it simple */
+.quiz-badge,
+.quiz-subtitle {
+    display: none;
+}
+
+/* Question Card - no card style, just spacing */
+.question-card {
+    margin-bottom: 1.5rem;
+}
+
+/* Question Number and Label */
+.question-card label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.question-number {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Code Block */
+.code-block {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-family: Courier New, monospace;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Inputs, Textarea, Select */
+.question-card input[type="text"],
+.question-card input[type="number"],
+.question-card textarea,
+.question-card select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #999;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Textarea */
+.question-card textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.submit-row {
+    margin-top: 1.5rem;
+}
+
+.submit-row button {
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 0.85rem;
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.submit-row button:hover {
+    background-color: navy;
+}

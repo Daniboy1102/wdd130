@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+
+    <div class="quiz-wrapper">
+        <header class="quiz-header">
+            <span class="quiz-badge">Test Your Knowledge</span>
+            <h1>HTML &amp; CSS Quiz</h1>
+            <p class="quiz-subtitle">Answer all four questions, then submit your quiz.</p>
+        </header>
+
+        <form action="#" method="post">
+
+            <!--Text Input-->
+            <div class="question-card">
+                <span class="question-number">01</span>
+                <label for="q1">
+                    Fill in the blank: The <______>; element is used to define a
+                        hyperlink to another page or resource.
+                </label>
+                <input type="text" id="q1" name="q1" placeholder="type your answer…" autocomplete="off" />
+            </div>
+
+            <!--Textarea-->
+            <div class="question-card">
+                <span class="question-number">02</span>
+                <label for="q2">
+                    In your own words, explain the difference between the CSS
+                    <em>margin</em> and <em>padding</em> properties.
+                </label>
+                <textarea id="q2" name="q2" rows="4" placeholder="type your answer…"></textarea>
+            </div>
+
+            <!--Dropdown -->
+            <div class="question-card">
+                <span class="question-number">03</span>
+                <label for="q3">
+                    Which HTML element is used to create an unordered (bulleted) list?
+                </label>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One …</option>
+                    <option value="ol">&lt;ol&gt;</option>
+                    <option value="ul">&lt;ul&gt;</option>
+                    <option value="li">&lt;li&gt;</option>
+                    <option value="dl">&lt;dl&gt;</option>
+                </select>
+            </div>
+
+            <!--Number Input-->
+            <div class="question-card">
+                <span class="question-number">04</span>
+                <label for="q4">
+                    How many heading levels (h1 – h6) does HTML provide? Enter a number.
+                </label>
+                <input type="number" id="q4" name="q4" min="1" max="99" placeholder="0" />
+            </div>
+
+            <!--Submit Button-->
+            <div class="submit-row">
+                <button type="submit">Submit Quiz</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
