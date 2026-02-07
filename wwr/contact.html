@@ -50,16 +50,16 @@
 
                     <fieldset>
                         <legend>Message Purpose</legend>
-                        <label>
-                            <input type="radio" name="purpose" value="general" checked>
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general" checked>
                             General Inquiry
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
                             Reservation Question
                         </label>
-                        <label>
-                            <input type="radio" name="purpose" value="website">
+                        <label for="website">
+                            <input type="radio" id="website" name="purpose" value="website">
                             Website Suggestion
                         </label>
                     </fieldset>
@@ -68,8 +68,8 @@
                     <textarea id="message" name="message" rows="6" placeholder="Type your message here..."
                         required></textarea>
 
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="newsletter" value="yes">
+                    <label for="newsletter" class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
                         Please subscribe me to the monthly newsletter
                     </label>
 
